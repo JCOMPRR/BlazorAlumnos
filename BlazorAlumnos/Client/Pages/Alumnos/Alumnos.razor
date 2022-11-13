@@ -1,0 +1,71 @@
+﻿@page "/alumnos"
+@using BlazorAlumnos.Shared.DTOs.Alumnos;
+
+@inject HttpClient httpClient
+@inject NavigationManager navigationManager
+
+<h3>Alumnos</h3>
+
+<div class="row justify-content-end">
+    <div class="col-lg-3 text-end">
+        <button type="button" class="btn btn-success" @onclick=@(() => navigationManager.NavigateTo("alumno"))>Agregar</button>
+    </div>
+</div>
+
+@if (alumnos == null)
+{
+    <h1>Cargando...</h1>
+}
+else if (alumnos.Count == 0)
+{
+    <h1>No se encontraron alumnos registrados...</h1>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table text-center table-hover">
+            <thead class="table-striped">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Matrícula</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var alumno in alumnos)
+                {
+                    <tr>
+                        <td>@alumno.Id</td>
+                        <td>@alumno.Matricula</td>
+                        <td>@alumno.Nombre</td>
+
+                        <td>
+                            <button class="btn btn-primary" type="button" @onclick=@(() => navigationManager.NavigateTo($"alumno/{alumno.Id}"))>Editar</button>
+                            <button class="btn btn-danger" type="button" @onclick="@(() => Eliminar(alumno))">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    protected List<AlumnoDTO> alumnos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await httpClient.GetFromJsonAsync<List<AlumnoDTO>>("api/alumnos");
+        if (response != null)
+        {
+            alumnos = response;
+        }
+    }
+
+    protected async Task Eliminar(AlumnoDTO alumno)
+    {
+        await httpClient.DeleteAsync($"api/alumnos/{alumno.Id}");
+        alumnos.Remove(alumno);
+    }
+}
