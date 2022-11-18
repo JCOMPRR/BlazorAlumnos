@@ -1,0 +1,69 @@
+﻿@page "/materias"
+@using BlazorAlumnos.Shared.DTOs.Materias;
+
+@inject HttpClient httpClient
+@inject NavigationManager navigationManager
+
+<h3>Materias</h3>
+
+<div class="row justify-content-end">
+    <div class="col-lg-3 text-end">
+        <button type="button" class="btn btn-success" @onclick=@(() => navigationManager.NavigateTo("materia"))>Agregar</button>
+    </div>
+</div>
+
+@if (materias == null)
+{
+    <h1>Cargando...</h1>
+}
+else if (materias.Count == 0)
+{
+    <h1>No se encontraron alumnos registrados...</h1>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table text-center table-hover">
+            <thead class="table-striped">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var materia in materias)
+                {
+                    <tr>
+                        <td>@materia.Id</td>
+                        <td>@materia.Nombre</td>
+
+                        <td>
+                            <button class="btn btn-primary" type="button" @onclick=@(() => navigationManager.NavigateTo($"alumno/{materia.Id}"))>Editar</button>
+                            <button class="btn btn-danger" type="button" @onclick="@(() => Eliminar(materia))">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    protected List<MateriaDTO> materias;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await httpClient.GetFromJsonAsync<List<MateriaDTO>>("api/materias");
+        if (response != null)
+        {
+            materias = response;
+        }
+    }
+
+    protected async Task Eliminar(MateriaDTO materia)
+    {
+        await httpClient.DeleteAsync($"api/materias/{materia.Id}");
+        materias.Remove(materia);
+    }
+}
