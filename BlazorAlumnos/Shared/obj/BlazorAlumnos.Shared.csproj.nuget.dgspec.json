@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anton\\source\\repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj": {}
+    "C:\\Users\\tai-j\\Source\\Repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anton\\source\\repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj": {
+    "C:\\Users\\tai-j\\Source\\Repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\source\\repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\tai-j\\Source\\Repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj",
         "projectName": "BlazorAlumnos.Shared",
-        "projectPath": "C:\\Users\\anton\\source\\repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj",
-        "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\source\\repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\tai-j\\Source\\Repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\BlazorAlumnos.Shared.csproj",
+        "packagesPath": "C:\\Users\\tai-j\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tai-j\\Source\\Repos\\BlazorAlumnos\\BlazorAlumnos\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tai-j\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

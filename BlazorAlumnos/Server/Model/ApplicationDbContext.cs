@@ -13,5 +13,6 @@ namespace BlazorAlumnos.Server.Model
         }
 
         public DbSet<Alumno> Alumnos { get; set; }
+        public DbSet<Materia> Materias { get; set; }
     }
 }

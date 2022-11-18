@@ -1,0 +1,12 @@
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\bin\Debug\net6.0\BlazorAlumnos.Shared.deps.json
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\bin\Debug\net6.0\BlazorAlumnos.Shared.dll
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\bin\Debug\net6.0\BlazorAlumnos.Shared.pdb
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.csproj.AssemblyReference.cache
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.AssemblyInfoInputs.cache
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.AssemblyInfo.cs
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.csproj.CoreCompileInputs.cache
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.dll
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\refint\BlazorAlumnos.Shared.dll
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\BlazorAlumnos.Shared.pdb
+C:\Users\tai-j\Source\Repos\BlazorAlumnos\BlazorAlumnos\Shared\obj\Debug\net6.0\ref\BlazorAlumnos.Shared.dll
