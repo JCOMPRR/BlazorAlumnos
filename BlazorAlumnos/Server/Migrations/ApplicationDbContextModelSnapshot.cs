@@ -41,6 +41,23 @@ namespace BlazorAlumnos.Server.Migrations
 
                     b.ToTable("Alumnos");
                 });
+
+            modelBuilder.Entity("BlazorAlumnos.Server.Model.Entities.Materia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Materias");
+                });
 #pragma warning restore 612, 618
         }
     }
